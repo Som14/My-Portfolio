@@ -1,0 +1,285 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: black; */
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+/* =====Main===== */
+.main {
+    border-right: 5px solid gray;
+    width: 30%;
+    float: left;
+    position: fixed;
+    height: 280vh;
+    background-color: rgb(26, 26, 50);
+}
+
+.main ul {
+    list-style: none;
+    padding: 0px;
+    font-weight: 600;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.main ul li {
+    margin: 10px auto;
+    padding: 10px;
+}
+
+.main ul li a {
+    text-decoration: none;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+}
+
+.main ul li a:hover {
+    text-decoration: underline;
+}
+
+.main ul li a:active {
+    color: blue;
+}
+
+.main ul li svg {
+    margin: 5px;
+}
+
+.main hr {
+    border: 2px solid;
+}
+
+.love {
+    text-align: center;
+    margin: 0%;
+    margin: 30px;
+}
+
+#chi img {
+    width: 100%;
+    border-radius: 100%;
+    padding: 30px;
+    /* border: 5px solid white; */
+}
+
+
+/* =====Sub===== */
+.sub {
+    width: 70%;
+    float: right;
+    background-color: rgba(26, 26, 50, 0.9)
+        /* margin: 0%;
+    padding: 0%; */
+}
+
+.sub h2 {
+    text-align: center;
+    color: white;
+    font-weight: 800;
+    padding: 5px;
+    word-spacing: 3px;
+    border: 2px solid white;
+    width: 25%;
+    margin: auto;
+    background-color: rgb(26, 26, 50);
+    border-radius: 10px;
+}
+
+
+/* =====Home===== */
+#home {
+    text-align: center;
+}
+
+#home img {
+    width: 100%;
+    padding: 30px;
+}
+
+#home p {
+    font-size: 20px;
+}
+
+
+/* =====About me===== */
+#about {
+    padding: 10px;
+}
+
+#about div {
+    padding: 10px 10px 0px 10px;
+    margin: 10px auto;
+}
+
+#about h4 {
+    text-decoration: underline;
+}
+
+
+/* =====Education===== */
+#education {
+    padding: 10px 10px 0px 10px;
+    margin: 10px auto;
+}
+
+#education ul {
+    padding: 20px;
+}
+
+/* =====Contact me===== */
+.contactme {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    padding: 30px;
+}
+
+.contact-image {
+    border: 5px solid white;
+    border-radius: 15px;
+    width: fit-content;
+}
+
+.contactme h5 {
+    display: none;
+}
+
+.contact-container {
+    margin: auto;
+    width: 30%;
+    height: 10%;
+}
+
+.contact-container p {
+    padding: 10px;
+    margin: 20px auto;
+}
+
+.contact-container a {
+    border-radius: 10px;
+    padding: 15px;
+    color: black;
+    background-color: white;
+}
+
+.contact-container a:hover {
+    padding: 10px;
+    color: white;
+    background-color: rgb(26, 26, 50);
+}
+
+
+/* =====Footer===== */
+.copyright {
+    padding: 10px;
+    margin: 30px auto;
+    width: fit-content;
+}
+
+#footer {
+    background-color: rgb(26, 26, 50);
+    text-align: center;
+    margin: 10px auto;
+    padding: 50px 30px 20px 30px;
+}
+
+#footer a {
+    padding: 15px;
+    color: white;
+}
+
+#footer a:hover {
+    color: rgb(26, 26, 50);
+    background-color: white;
+}
+
+
+/* =====Media Query===== */
+@media (min-width:250px) and (max-width:700px) {
+    .main {
+        background-color: rgb(26, 26, 50);
+        width: 100%;
+        height: fit-content;
+        position: relative;
+        padding: 10px;
+        border-bottom: 5px solid gray;
+        /* z-index: 999; */
+    }
+
+    .main ul {
+        list-style-type: none;
+        margin: 0%;
+        padding: 0%;
+        width: 60%;
+        float: right;
+    }
+
+    .main ul li {
+        display: inline-block;
+    }
+
+    .main svg {
+        display: none;
+    }
+
+    #chi img {
+        width: 40%;
+        padding: 0%;
+        float: left;
+    }
+
+    .love, .main hr {
+        display: none;
+    }
+
+    .sub {
+        width: 100%;
+        background-color: rgba(26, 26, 50, 0.9);
+        color: white;
+        position: relative;
+    }
+
+    .sub h2 {
+        text-align: center;
+        color: white;
+        font-weight: 800;
+        padding: 5px;
+        width: 50%;
+        margin: auto;
+    }
+
+    .contactme {
+        display: block;
+    }
+
+    .contact-image {
+        display: none;
+    }
+
+    .contactme h5 {
+        display: block;
+    }
+
+    .contact-container {
+        width: 100%;
+    }
+
+    .contact-container p {
+        padding: 10px;
+        margin: 20px auto;
+        width: 100%;
+        text-align: center;
+    }
+}
